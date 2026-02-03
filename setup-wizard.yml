@@ -1,0 +1,18 @@
+version: "2"
+fields:
+  - id: CLIENT_ID
+    title: Client ID
+    description: |
+      Unique identifier for your task sync.
+      
+      This acts as your authentication token. All devices syncing 
+      the same tasks must use the same Client ID.
+      
+      Use a valid UUID (e.g., from `uuidgen` or `cat /proc/sys/kernel/random/uuid`).
+    target:
+      type: environment
+      name: CLIENT_ID
+      service: taskchampion.public.dappnode.eth
+    required: true
+    pattern: "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+    patternErrorMessage: "Client ID must be a valid UUID (e.g., 550e8400-e29b-41d4-a716-446655440000)"

@@ -1,0 +1,17 @@
+# Build outputs
+build_*/
+*.txz
+releases.json
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using any Node tools locally)
+node_modules/

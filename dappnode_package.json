@@ -1,0 +1,31 @@
+{
+  "name": "taskchampion.public.dappnode.eth",
+  "version": "0.1.0",
+  "upstreamVersion": "0.7.1",
+  "shortDescription": "Taskwarrior task synchronization server",
+  "description": "TaskChampion Sync Server enables synchronization of Taskwarrior tasks across multiple devices. All task data is encrypted end-to-end.\n\nAfter installation, configure your Taskwarrior clients with:\n- sync.server.url: http://taskchampion.public.dappnode:8080\n- sync.server.client_id: [Your configured client ID]",
+  "type": "service",
+  "architectures": ["linux/amd64"],
+  "categories": ["Developer tools"],
+  "keywords": ["taskwarrior", "taskchampion", "sync", "todo"],
+  "exposable": [
+    {
+      "name": "TaskChampion Sync API",
+      "description": "TaskChampion sync protocol endpoint",
+      "port": 8080
+    }
+  ],
+  "backup": [
+    {
+      "name": "sync-data",
+      "path": "/var/lib/taskchampion-sync-server/data",
+      "service": "taskchampion.public.dappnode.eth"
+    }
+  ],
+  "author": "Jacob Czepluch (@czepluch)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/czepluch/taskchampion-dappnode"
+  }
+}

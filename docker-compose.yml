@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  taskchampion.public.dappnode.eth:
+    image: ghcr.io/gothenburgbitfactory/taskchampion-sync-server:0.7.1
+    restart: unless-stopped
+    environment:
+      RUST_LOG: info
+      DATA_DIR: /var/lib/taskchampion-sync-server/data
+      LISTEN: 0.0.0.0:8080
+      CLIENT_ID: ""
+    volumes:
+      - "sync-data:/var/lib/taskchampion-sync-server/data"
+    ports:
+      - "8080:8080"
+volumes:
+  sync-data: {}
