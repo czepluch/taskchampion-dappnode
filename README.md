@@ -72,7 +72,6 @@ If needed, you can expose the service to the public internet via DAppNode's "Exp
 
 - Taskwarrior documentation: https://taskwarrior.org/docs/
 - TaskChampion Sync Server: https://github.com/gothenburgbitfactory/taskchampion-sync-server
-- DAppNode documentation: https://docs.dappnode.io/
 
 ## Maintainer
 
