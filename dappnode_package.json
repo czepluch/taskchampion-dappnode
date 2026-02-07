@@ -1,7 +1,9 @@
 {
   "name": "taskchampion.public.dappnode.eth",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "upstreamVersion": "0.7.1",
+  "upstreamRepo": "gothenburgbitfactory/taskchampion-sync-server",
+  "upstreamArg": "UPSTREAM_VERSION",
   "shortDescription": "Taskwarrior task synchronization server",
   "description": "TaskChampion Sync Server enables synchronization of Taskwarrior tasks across multiple devices. All task data is encrypted end-to-end.\n\nAfter installation, configure your Taskwarrior clients with:\n- sync.server.url: http://taskchampion.public.dappnode:8080\n- sync.server.client_id: [Your configured client ID]",
   "type": "service",
