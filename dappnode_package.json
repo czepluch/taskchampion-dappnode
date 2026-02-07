@@ -1,6 +1,6 @@
 {
   "name": "taskchampion.public.dappnode.eth",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "upstreamVersion": "0.7.1",
   "upstreamRepo": "gothenburgbitfactory/taskchampion-sync-server",
   "upstreamArg": "UPSTREAM_VERSION",
